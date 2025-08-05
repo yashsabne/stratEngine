@@ -4,7 +4,7 @@ import axios from 'axios';
 import { backendUrl } from '../constants';
 
 
-export const Dropzone = ({ onDrop }) => {
+const Dropzone = ({ onDrop }) => {
 
   const [uploadingLoad, setUploadingLoad] = useState(false);
 
@@ -53,3 +53,5 @@ export const Dropzone = ({ onDrop }) => {
     </div>
   );
 };
+
+export default Dropzone;
