@@ -341,7 +341,7 @@ const Dashboard = () => {
                     <div key={key} className="flex justify-between">
                       <span className="text-gray-400 capitalize">{key}:</span>
                       <span className="text-gray-200">
-                        {typeof value === "Object"
+                        {typeof value === "object"
                           ? JSON.stringify(value)
                           : value?.toString()}
                       </span>
