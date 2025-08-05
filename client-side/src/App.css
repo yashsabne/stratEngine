@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+} 
+
+.img-text-about {
+  border: 1px dashed white; 
+}
+
+@media (max-width:600px) {
+  .circleSvg {
+    display: none;
+  }
+  .videos-div {
+    flex-wrap: wrap;
+  }
+}
+
+form input, form select {
+  height: 30px;
+}
+
