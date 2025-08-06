@@ -12,7 +12,7 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 const User = require('../models/User');
-const pythonServer = 'http://localhost:5001'
+const pythonServer = process.env.PYTHONSERVER;
 
 const authMiddleware = async (req, res, next) => {
 
