@@ -26,7 +26,7 @@ const Cta_video = () => {
                             loop
                             className="w-full h-auto object-cover rounded-xl"
                         >
-                            <source src="/videos/cta_1.mp4" type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dez41esfq/video/upload/v1754454984/cta_3_xedx73.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -38,7 +38,7 @@ const Cta_video = () => {
                             loop
                             className="w-full h-auto object-cover rounded-xl"
                         >
-                            <source src="/videos/cta_2.mp4" type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dez41esfq/video/upload/v1754454984/cta_2_xwm21p.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -51,7 +51,7 @@ const Cta_video = () => {
                             loop
                             className="w-full h-auto object-cover rounded-xl"
                         >
-                            <source src="/videos/cta_3.mp4" type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dez41esfq/video/upload/v1754454983/cta_1_fgalvc.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
