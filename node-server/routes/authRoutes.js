@@ -261,6 +261,8 @@ router.get('/me', async (req, res) => {
       });
     }
 
+    console.log(req.session.user)
+
     const user = await User.findById(req.session.user.id).select('-password');
     const loginHistory = user.loginHistory;
  
