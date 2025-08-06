@@ -72,7 +72,7 @@ useEffect(() => {
           loop
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dez41esfq/video/upload/v1754454691/hero_bjmjwl.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
