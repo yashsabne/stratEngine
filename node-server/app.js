@@ -44,7 +44,9 @@ app.use(cors({
 
 
 
-// Session Store
+app.set('trust proxy', 1);  
+
+
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: false,
@@ -54,12 +56,12 @@ app.use(session({
     collectionName: 'sessions',
     ttl: 14 * 24 * 60 * 60
   }),
-  cookie: {
-    httpOnly: true,
-    secure: false,        
-    sameSite: 'lax',   
-    maxAge: 7 * 24 * 60 * 60 * 1000
-  },
+ cookie: {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === 'production', 
+  sameSite: 'lax',
+  maxAge: 7 * 24 * 60 * 60 * 1000
+}
 }));
  
 app.get('/', (req, res) => {
