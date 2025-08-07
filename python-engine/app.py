@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from modules.forecast_model import forecast_sales_from_csv
+from modules.forecast_model import forecast_sales
 from modules.inventory_model import calculate_eoq
 from modules.pricing_model import analyze_pricing_from_csv
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 def forecast():
     csv_url = request.args.get("csv_url")
     try:
-        result = forecast_sales_from_csv(csv_url)
+        result = forecast_sales(csv_url)
         if isinstance(result, tuple):
             return jsonify(result[0]), result[1]
         return jsonify(result)
